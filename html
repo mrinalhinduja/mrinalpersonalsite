@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrinal Hinduja - Personal Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #111;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #111;
+      color: white;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .dark-mode nav {
+      background-color: #222;
+    }
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+    button.toggle-mode {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #007BFF;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-mode" onclick="toggleMode()">🌙</button>
+  <header>
+    <h1>Mrinal Hinduja</h1>
+    <p>Engineer • Photographer • Music Enthusiast • Storyteller in the Making</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Mrinal. I love building things that blend creativity and technology — from embedded systems to personal stories captured in photos and music. My journey spans hackathons, deep learning marathons, and countless cups of coffee. I believe in creating things that last and inspire.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Embedded Systems Development</div>
+      <div class="card">C/C++ & Real-Time OS</div>
+      <div class="card">Photography & Visual Storytelling</div>
+      <div class="card">Music Mixing & Creative Writing</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Autonomous Drone</h3>
+        <p>My personal drone project exploring AI navigation and embedded control.</p>
+      </div>
+      <div class="card">
+        <h3>BeagleBone Black Server</h3>
+        <p>Signal communication using C, built for IoT experiments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect — whether you want to collaborate or just share ideas.</p>
+    <p>Email: <a href="mailto:mrinal@example.com">mrinal@example.com</a></p>
+    <p>Social: <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" download>Download My Resume</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Mrinal Hinduja. Built with ❤️ and curiosity.</p>
+  </footer>
+
+  <script>
+    function toggleMode(){
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
